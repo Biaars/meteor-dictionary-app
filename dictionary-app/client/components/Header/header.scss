@@ -1,0 +1,10 @@
+.componentsHeader {
+  background-image: linear-gradient(to left, #0d639b, #419ffb, #0d639b);
+  min-height: 150px;
+
+  .input-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

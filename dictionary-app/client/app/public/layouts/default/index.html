@@ -1,0 +1,13 @@
+<template name="publicLayoutsDefault">
+  <div class="publicLayoutsDefault d-flex flex-column vh-100 m-auto">
+    
+    <div style="background-image: linear-gradient(to left, #0d639b, #419ffb, #0d639b);">
+      {{> componentsNavbar}}
+    </div>
+    {{> componentsHeader}}
+
+    <div class="container flex-fill">
+      {{> Template.dynamic template=page}}
+    </div>
+  </div>
+</template>

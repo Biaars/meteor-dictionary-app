@@ -1,0 +1,16 @@
+<template name="pagesSynonyms">
+  <div class="container">
+ 
+    <div class="synonyms-container">
+      {{#if synonyms}}
+        <ul>
+          {{#each synonyms}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        {{else}}
+          <p>not found</p>
+      {{/if}}
+    </div>
+  </div>
+</template>

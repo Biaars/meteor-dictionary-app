@@ -1,0 +1,42 @@
+<template name="pagesMeaning">
+  <div class="container flex-fill">
+    <!-- <input type="text" name="inputText" placeholder="Enter a word">
+    <button id="brd-button-search">Search</button> -->
+    <div class="row">
+      <div class="col">
+        {{#each meaning}}
+          {{#if (eq this.partOfSpeech "noun")}}
+            <div>
+              <h3>{{this.partOfSpeech}}</h3>
+              <ul>
+                {{#each this.definitions}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            </div>
+          {{/if}}
+        {{/each}}
+        <!-- {{#unless meaning}}
+        <p>not found</p>
+    {{/unless}} -->
+      </div>
+      <div class="col">
+        {{#each meaning}}
+          {{#if (eq this.partOfSpeech "verb")}}
+            <div>
+              <h3>{{this.partOfSpeech}}</h3>
+              <ul>
+                {{#each this.definitions}}
+                  <li>{{this}}</li>
+                {{/each}}
+              </ul>
+            </div>
+          {{/if}}
+        {{/each}}
+        <!-- {{#unless meaning}}
+            <p>not found</p>
+        {{/unless}} -->
+      </div>
+    </div>
+  </div>
+</template>
